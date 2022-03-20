@@ -2,8 +2,7 @@ body {
     text-align: center;
     display: flex;
     margin: 5vh auto;
-    width: 43vh;
-    height: 40vh;
+    width: 300px;
     content: "";
     clear: both;
     display: table;
