@@ -1,16 +1,26 @@
 body {
+    text-align: center;
     display: flex;
-    margin: 18vh auto;
+    margin: 5vh auto;
     width: 43vh;
     height: 40vh;
     content: "";
     clear: both;
     display: table;
+    background: rgb(0, 11, 18);
+    background: linear-gradient(270deg, rgba(0, 11, 18, 1) 0%, rgba(4, 17, 98, 1) 58%, rgba(15, 2, 186, 1) 95%);
+}
+
+h1{
+    color: white;
+    font-size: 50px;
+    font-family: 'Segoe UI';
+    margin-bottom: 0;
 }
 
 .container {
     border: 3px solid black;
-    background-color: rgb(238, 255, 0);
+    background-image: linear-gradient( 109.6deg,  rgb(44, 76, 78) 11.2%, rgba(36,163,190,1) 91.1% );
     border-radius: 12px;
     padding: 11px;
 }
@@ -24,11 +34,11 @@ body {
     width: 98%;
 }
 
-#resultado{
+#resultado {
     font-size: 2.8rem;
 }
 
-#none{
+#none {
     visibility: hidden;
 }
 
@@ -43,6 +53,10 @@ textarea {
     display: block;
     padding: 4px;
     position: inherit;
+}
+
+#tecla0{
+    width: 115px;
 }
 
 .number {
