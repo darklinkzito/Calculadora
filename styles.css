@@ -1,31 +1,41 @@
 body {
+    display: flex;
     margin: 20vh auto;
-    width: 20%;
+    width: 43vh;
     height: 40vh;
-    border: 3px solid black;
-    border-radius: 15px;
     content: "";
     clear: both;
     display: table;
 }
 
-.calc-header{
-    margin: 5px;
+.container {
     border: 3px solid black;
-    border-radius: 10px;
+    background-color: rgb(238, 255, 0);
+    border-radius: 12px;
+    padding: 11px;
 }
 
-.botoes{
+.tela {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: flex-end;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 98%;
+    font-size: 2.8rem;
+}
+
+.botoes {
     display: block;
-    padding: 5px;
+    padding: 4px;
 }
 
 .number {
     margin-top: 5px;
     border: 2px solid lightblue;
     border-radius: 15px;
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     background-color: black;
     color: white;
     cursor: pointer;
@@ -33,8 +43,8 @@ body {
 
 .number:hover {
     border: 2px solid lightblue;
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     background-color: gray;
     color: white;
     cursor: pointer;
@@ -42,8 +52,8 @@ body {
 
 .number:active {
     border: 2px solid lightblue;
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     background-color: rgb(179, 179, 179);
     color: white;
     cursor: pointer;
@@ -52,8 +62,8 @@ body {
 .operator {
     border: 2px solid lightblue;
     border-radius: 15px;
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     background-color: black;
     color: white;
     cursor: pointer;
@@ -61,8 +71,8 @@ body {
 
 .operator:hover {
     border: 2px solid lightblue;
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     background-color: gray;
     color: white;
     cursor: pointer;
@@ -70,14 +80,9 @@ body {
 
 .operator:active {
     border: 2px solid lightblue;
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     background-color: rgb(179, 179, 179);
     color: white;
     cursor: pointer;
 }
-
-#calc{
-    background-color: black;
-}
-

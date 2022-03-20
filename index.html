@@ -13,32 +13,26 @@
 <body>
     <div class="container">
         <div class="calculadora">
-            <div class="calc-header">
-                <div>
-                    <br>
-                    <br>
-                    <br>
-                </div>
-            </div>
+                <div class="tela" id="resultado"></div>
             <div class="botoes">
-                <button class="operator" id="clean-display">CE</button>
-                <button class="operator" id="clean-history">C</button>
-                <button class="operator" id="delete"><</button>
+                <button class="operator" id="clear-display" onclick="clear()">CE</button>
+                <button class="operator" id="clear-history">C</button>
+                <button class="operator" id="delete">↞</button>
                 <button class="operator" id="divi">/</button>
-                <button class="number" id="tecla1">1</button>
-                <button class="number" id="tecla2">2</button>
-                <button class="number" id="tecla3">3</button>
-                <button class="operator" id="som">+</button>
-                <button class="number" id="tecla4">4</button>
-                <button class="number" id="tecla5">5</button>
-                <button class="number" id="tecla6">6</button>
+                <button class="number" id="tecla7" onclick="insert('7')">7</button>
+                <button class="number" id="tecla8" onclick="insert('8')">8</button>
+                <button class="number" id="tecla9" onclick="insert('9')">9</button>
+                <button class="operator" id="soma">+</button>
+                <button class="number" id="tecla4" onclick="insert('4')">4</button>
+                <button class="number" id="tecla5" onclick="insert('5')">5</button>
+                <button class="number" id="tecla6" onclick="insert('6')">6</button>
                 <button class="operator" id="sub">-</button>
-                <button class="number" id="tecla7">7</button>
-                <button class="number" id="tecla8">8</button>
-                <button class="number" id="tecla9">9</button>
+                <button class="number" id="tecla1" onclick="insert('1')">1</button>
+                <button class="number" id="tecla2" onclick="insert('2')">2</button>
+                <button class="number" id="tecla3" onclick="insert('3')">3</button>
                 <button class="operator" id="mult">*</button>
                 <button class="operator" id="inverter">+-</button>                 
-                <button class="number" id="tecla0">0</button> 
+                <button class="number" id="tecla0" onclick="insert('0')">0</button> 
                 <button class="operator" id="decimal">.</button>                 
                 <button class="operator" id="igual">=</button>
             </div>

@@ -1,4 +1,8 @@
-const calculadora = document.getElementsByClassName("calculadora");
-const numeros = document.querySelectorAll('[id*=tecla]');
+function insert(num) {
+    let numero = document.getElementById('resultado').innerHTML;
+    document.getElementById('resultado').innerHTML = numero + num;
+}
 
-console.log(numeros);
+function clear() {
+    document.getElementById('resultado').innerHTML = "";
+}
