@@ -1,24 +1,29 @@
 let calculado = false;
+let numero;
 
 function insert(num) {
     if (calculado == false) {
-        let numero = document.getElementById('resultado').innerHTML;
+        numero = document.getElementById('resultado').innerHTML;
         document.getElementById('resultado').innerHTML = numero + num;
     } else {
         document.getElementById('resultado').innerHTML = "";
-        let numero = document.getElementById('resultado').innerHTML;
+        numero = document.getElementById('resultado').innerHTML;
         document.getElementById('resultado').innerHTML = numero + num;
         calculado = false;
     }
 }
 
 function insert_operator(num) {
-    let numero = document.getElementById('resultado').innerHTML;
+    tecla = num;
+    numero = document.getElementById('resultado').innerHTML;
     document.getElementById('resultado').innerHTML = numero + num;
     calculado = false;
-    if (calculado == true) {
-        let numero = document.getElementById('resultado').innerHTML;
-        document.getElementById('resultado').innerHTML = numero + num;
+    if (numero.substring(numero.length-1, numero.length) == num) {
+        var resultado = document.getElementById("resultado").innerHTML;
+        document.getElementById("resultado").innerHTML = num.replace(num, tecla);
+    } else {
+        var resultado = document.getElementById("resultado").innerHTML;
+        document.getElementById("resultado").innerHTML = numero + num;
     }
 }
 
