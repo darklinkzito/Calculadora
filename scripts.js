@@ -56,7 +56,7 @@ function calcular() {
     var ultimo_carac = resultado.charAt(resultado.length - 1);
     var eNum = !isNaN(ultimo_carac);
 
-//se ultimo caracter for um número fazer conta senão não é um calculo.
+//se ultimo caracter for um número fazer conta, senão não é um calculo válido.
 
     if (eNum == true) {
         document.getElementById("resultado").innerHTML = eval(resultado);
