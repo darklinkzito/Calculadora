@@ -1,11 +1,9 @@
 body {
     text-align: center;
-    display: flex;
-    margin: 5vh auto;
-    width: 0;
-    content: "";
-    clear: both;
     display: table;
+    margin: 5vh auto;
+    margin-top: 0;
+    width: 0;
     background: rgb(0, 11, 18);
     background: linear-gradient(270deg, rgba(0, 11, 18, 1) 0%, rgba(4, 17, 98, 1) 58%, rgba(15, 2, 186, 1) 95%);
 }
@@ -34,6 +32,8 @@ h1{
 }
 
 #resultado {
+    height: 52px;
+    width: 235px;
     font-size: 2.8rem;
 }
 

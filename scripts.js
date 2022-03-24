@@ -1,5 +1,22 @@
 let calculado = false;
 let numero;
+let limite = 9;
+let rem = 2.8;
+
+function formatar() {
+    var texto = document.getElementById('resultado').innerHTML;
+    if (texto.toString().length > limite) {
+        document.getElementById("resultado").style.fontSize = rem /2 - 0.1 + "rem";  
+        rem /= 2;
+        limite *= 4;
+    } else{
+        document.getElementById("resultado").style.fontSize = 2.8 + "rem";
+        limite = 9;
+        rem = 2.8;
+
+    }
+}
+
 
 
 //função para inserir número na calculadora .
@@ -38,6 +55,9 @@ function insert_operator(num) {
 
 function clean() {
     document.getElementById('resultado').innerHTML = "";
+    document.getElementById("resultado").style.fontSize = 2.8 + "rem";
+    limite = 9;
+    rem = 2.8;
     calculado = false;
 }
 
@@ -56,7 +76,7 @@ function calcular() {
     var ultimo_carac = resultado.charAt(resultado.length - 1);
     var eNum = !isNaN(ultimo_carac);
 
-//se ultimo caracter for um número fazer conta, senão não é um calculo válido.
+    //se ultimo caracter for um número fazer conta, senão não é um calculo válido.
 
     if (eNum == true) {
         document.getElementById("resultado").innerHTML = eval(resultado);
