@@ -2,23 +2,22 @@ let calculado = false;
 let numero;
 let limite = 9;
 let rem = 2.8;
+let texto;
 
 //fução para formatar tamanho dos caracteres caso seja maior que o limite
 
 function formatar() {
-    var texto = document.getElementById('resultado').innerHTML;
+    texto = document.getElementById('resultado').innerHTML;
+    console.log(texto.toString().length);
+    console.log(texto);
     if (texto.toString().length > limite) {
-        document.getElementById("resultado").style.fontSize = rem /2 - 0.1 + "rem";  
-        rem /= 2;
+        console.log("formatação alterada");
+        document.getElementById("resultado").style.fontSize = rem / 2 - 0.1 + "rem";
+        rem = rem / 2 - (0.1 * 2);
+        limite++
         limite *= 4;
-    } else{
-        document.getElementById("resultado").style.fontSize = 2.8 + "rem";
-        limite = 9;
-        rem = 2.8;
-
     }
 }
-
 
 
 //função para inserir número na calculadora .
@@ -60,6 +59,7 @@ function clean() {
     document.getElementById("resultado").style.fontSize = 2.8 + "rem";
     limite = 9;
     rem = 2.8;
+    console.log(limite);
     calculado = false;
 }
 
@@ -69,6 +69,11 @@ function back() {
     calculado = false;
     var resultado = document.getElementById("resultado").innerHTML;
     document.getElementById("resultado").innerHTML = resultado.substring(0, resultado.length - 1);
+    if (texto.toString().length < limite) {
+        limite = 9;
+        rem = 2.8;
+        document.getElementById("resultado").style.fontSize = 2.8 + "rem";
+    }
 }
 
 //função para calcular resultado da conta na tela.
