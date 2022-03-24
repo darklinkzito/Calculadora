@@ -3,6 +3,8 @@ let numero;
 let limite = 9;
 let rem = 2.8;
 
+//fução para formatar tamanho dos caracteres caso seja maior que o limite
+
 function formatar() {
     var texto = document.getElementById('resultado').innerHTML;
     if (texto.toString().length > limite) {
